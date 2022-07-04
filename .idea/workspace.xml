@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83c563b6-5836-4c18-a287-2f4eaac986b1" name="Changes" comment="Добавлены классы Исключений.&#10;Добавлены вспомогательные функции.">
-      <change afterPath="$PROJECT_DIR$/src/CalcAssistant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CalcConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dict.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/NegativeResultException.java" afterDir="false" />
+    <list default="true" id="83c563b6-5836-4c18-a287-2f4eaac986b1" name="Changes" comment="Добавлен класс CalcAssistant и его методы, которые будут помогать методу calc форматировать строку ввода.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalcAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalcAssistant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalcConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalcConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/DifferentNumberSystemsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/DifferentNumberSystemsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/InvalidNumberFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/InvalidNumberFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/NonMathOperationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/NonMathOperationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/TooManyOperandsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/TooManyOperandsException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656775530474</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлен класс CalcAssistant и его методы, которые будут помогать методу calc форматировать строку ввода.">
+      <created>1656839307262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656839307262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создал проект и приступил к написанию кода." />
     <MESSAGE value="Добавлены классы Исключений.&#10;Добавлены вспомогательные функции." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены классы Исключений.&#10;Добавлены вспомогательные функции." />
+    <MESSAGE value="Добавлен класс CalcAssistant и его методы, которые будут помогать методу calc форматировать строку ввода." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен класс CalcAssistant и его методы, которые будут помогать методу calc форматировать строку ввода." />
   </component>
 </project>

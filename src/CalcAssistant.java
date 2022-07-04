@@ -6,7 +6,7 @@ class CalcAssistant {
         char operator = ' ';
         for (String ch : new String[]{"/", "*", "-", "+"}) {
             if (input.contains(ch)) {
-                operator = ch.toCharArray()[0];
+                operator = ch.charAt(0);
                 break;
             }
         }

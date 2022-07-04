@@ -1,5 +1,4 @@
-//import java.util.Scanner;
-
+import java.util.Scanner;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 
@@ -7,12 +6,14 @@ import exceptions.*;
 
 public class Main {
     public static void main(String[] args) {
-        //Scanner in = new Scanner(System.in);
-        //PrintStream out = new PrintStream(System.out, true, StandardCharsets.UTF_8);
+        Scanner in = new Scanner(System.in);
+        PrintStream out = new PrintStream(System.out, true, StandardCharsets.UTF_8);
         PrintStream err = new PrintStream(System.err, true, StandardCharsets.UTF_8);
+        out.print("Введите выражение сюда -> ");
+        String userInput = in.nextLine();
+        out.print("Результат: ");
         try {
-            //System.out.println(calc(in.nextLine()));
-            System.out.println(calc("iX * x"));
+            out.println(calc(userInput));
         } catch (TooManyOperandsException | NonMathOperationException |
                  InvalidNumberFormatException | DifferentNumberSystemsException | NegativeResultException ex) {
             err.println(ex.getMessage());
@@ -59,7 +60,7 @@ public class Main {
             if (result <= 0) {
                 throw new NegativeResultException("В римской системе нет отрицательных чисел.");
             } else {
-                output = firstNumber;
+                output = converter.fromArabianToRoman(result);
             }
         }
         return output;
