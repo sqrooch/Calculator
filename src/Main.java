@@ -4,7 +4,15 @@ import java.nio.charset.StandardCharsets;
 
 import exceptions.*;
 
+/**
+ * @author sqrooch.
+ * Консольный калькулятор для римской и арабской систем счислений.
+ */
 public class Main {
+    /**
+     * Основной метод, который запускает программу калькулятора.
+     * Запрашивает от пользователя строку в виде математического выражения.
+     */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintStream out = new PrintStream(System.out, true, StandardCharsets.UTF_8);
@@ -20,6 +28,17 @@ public class Main {
         }
     }
 
+    /**
+     * Метод для подсчёта результата математического выражения. Работает с арабскими и римскими цифрами.
+     *
+     * @param input Принимает строку типа String, введённую пользователем.
+     * @return Возвращает строку типа String, как результат арифметической операции.
+     * @throws TooManyOperandsException        Запрет использования более двух операндов в выражении.
+     * @throws NonMathOperationException       Отсутствие оператора в выражении.
+     * @throws InvalidNumberFormatException    Формат выражения не удовлетворяет условиям задачи.
+     * @throws DifferentNumberSystemsException Одновременное использование разных Систем Счисления.
+     * @throws NegativeResultException         Отрицательный результат арифметического выражения при использовании римской СС.
+     */
     public static String calc(String input)
             throws TooManyOperandsException, NonMathOperationException,
             InvalidNumberFormatException, DifferentNumberSystemsException, NegativeResultException {

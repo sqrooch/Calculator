@@ -1,6 +1,16 @@
 import exceptions.InvalidNumberFormatException;
 
+/**
+ * Помогает методу calc работать с конвертацией между системами счисления.
+ */
 class CalcConverter {
+    /**
+     * Опознаёт к какой системе счисления относятся введённые операнды.
+     *
+     * @param number Принимает число в виде подстроки типа String.
+     * @return Возвращает true, если число записано в арабской СС и false, если в римской.
+     * @throws InvalidNumberFormatException Формат выражения не удовлетворяет условиям задачи.
+     */
     boolean checkNumberSystem(String number) throws InvalidNumberFormatException {
         if (number.matches("[1-9]|10")) {
             return true;
@@ -15,6 +25,12 @@ class CalcConverter {
         }
     }
 
+    /**
+     * Конвертирует число из римской СС в арабскую.
+     *
+     * @param romanNumber Принимает в качестве аргумента число в виде подстроки типа String.
+     * @return Возвращает результат в виде числа типа int.
+     */
     int fromRomanToArabian(String romanNumber) {
         char[] romanNumberArray = romanNumber.toCharArray();
         int[] arabicNumberArray = new int[romanNumber.length()];
@@ -35,6 +51,12 @@ class CalcConverter {
         return arabicNumber;
     }
 
+    /**
+     * Конвертирует число из арабской СС в римскую.
+     *
+     * @param arabicNumber Принимает в качестве аргумента число типа int.
+     * @return Возвращает результат в виде строки типа String.
+     */
     String fromArabianToRoman(int arabicNumber) {
         StringBuilder romanNumber = new StringBuilder();
         for (int i = Dict.values().length - 1; i >= 0; i--) {
